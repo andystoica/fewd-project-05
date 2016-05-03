@@ -1,0 +1,57 @@
+/**
+ * Footer styles
+ */
+
+// Media Query Mixin
+@mixin media($break) {
+  @if $break == mobile {
+    @media (min-width: $brk-small) {
+      @content;
+    }
+  } @else if $break == landscape {
+    @media (min-width: $brk-small-landscape) {
+      @content;
+    }
+  } @else if $break == tablet {
+    @media (min-width: $brk-medium) {
+      @content;
+    }
+  } @else if $break == desktop {
+    @media (min-width: $brk-large) {
+      @content;
+    }
+  }
+}
+
+
+
+// Font size mixins
+@mixin small-light {
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+@mixin small-bold {
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+@mixin medium-light {
+  font-size: 1.1rem;
+  font-weight: 100;
+}
+
+@mixin medium-normal {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+@mixin medium-bold {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+@mixin large-light {
+  font-size: 2rem;
+  font-weight: 100;
+}

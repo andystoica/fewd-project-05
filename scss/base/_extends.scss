@@ -1,0 +1,14 @@
+// Extend placeholders
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%app-width {
+  max-width: $app-max-width;
+  margin: 0 auto;
+}

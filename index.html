@@ -4,19 +4,136 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS to Sass</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,600">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <header>
-    <h1>Hello World!</h1>
+  <header class="main-header">
+    <a class="header-logo" href="index.html">Andy Stoica</a>
+    <a class="header-nav-btn" href="#"><i class="fa fa-bars"></i></a>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#zoom">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
+  <main class="home-page">
+    <header>
+      <img src="img/andy-stoica-profile.png" alt="Photo of Andy Stoica" />
+      <p>
+        Like every good story, mine started 30 years ago when I met computer generated graphics for the first time. It was a captivating moment that became an obsession and dominated my life ever since.
+      </p>
+      <p>
+        Humbled by daily technology advances, as my life journey continues, I feel priviledged to offer my partners and clients the very best that web technology has to offer.
+      </p>
+    </header>
+
+    <section class="portfolio" id="portfolio">
+      <h2>Portfolio</h2>
+      <ul>
+        <li class="gallery-item">
+          <a href="#">
+            <img src="img/portfolio-1.png"
+            alt="Portfolio">
+            <h3>Marketing Page</h3>
+            <p>This Project shows front page of a marketing website meant for a specific business I'm interested in.</p>
+          </a>
+        </li>
+
+        <li class="gallery-item">
+          <a href="#">
+            <img src="img/portfolio-2.png"
+            alt="Portfolio">
+            <h3>Marketing Page</h3>
+            <p>This Project shows front page of a marketing website meant for a specific business I'm interested in.</p>
+          </a>
+        </li>
+
+        <li class="gallery-item">
+          <a href="#">
+            <img src="img/portfolio-3.png"
+            alt="Portfolio">
+            <h3>Marketing Page</h3>
+            <p>This Project shows front page of a marketing website meant for a specific business I'm interested in.</p>
+          </a>
+        </li>
+
+        <li class="gallery-item">
+          <a href="#">
+            <img src="img/portfolio-4.png"
+            alt="Portfolio">
+            <h3>Marketing Page</h3>
+            <p>This Project shows front page of a marketing website meant for a specific business I'm interested in.</p>
+          </a>
+        </li>
+
+        <li class="gallery-item">
+          <a href="#">
+            <img src="img/portfolio-5.png"
+            alt="Portfolio">
+            <h3>Marketing Page</h3>
+            <p>This Project shows front page of a marketing website meant for a specific business I'm interested in.</p>
+          </a>
+        </li>
+
+        <li class="gallery-item">
+          <a href="#">
+            <img src="img/portfolio-6.png"
+            alt="Portfolio">
+            <h3>Marketing Page</h3>
+            <p>This Project shows front page of a marketing website meant for a specific business I'm interested in.</p>
+          </a>
+        </li>
+
+      </ul>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <p>
+        Mastering the art of building scallable web application and delivering beautifully crafted user interfaces are my ultimate goals. These are some of the areas of high interest:
+      </p>
+      <ul class="skill-set">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>SASS</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>AngularJS</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+        <li>JAVA</li>
+      </ul>
+      <p>
+        <em>"Only one who devotes himself to a cause with his whole strength can be a true master. For this reason mastery demands all of a person"</em> - Albert Einstein
+      </p>
+    </section>
+
+    <section class="contact" id="zoom">
+      <h2>Contact</h2>
+      <p>If want to know more about my work or some friendly advice, please get in touch!</p>
+      <p><a href="tel:+440123444555">+44 0781 332 544</a></p>
+      <p><a href="mailto:andy.stoica@me.com">andy.stoica@me.com</a></p>
+    </section>
   </main>
 
-  <footer>
+  <footer class="main-footer">
+    <a class="footer-logo" href="index.html">Andy Stoica</a>
+    <nav class="footer-nav">
+      <ul>
+        <li class="top"><a href="#top">Back To Top</a></li>
+        <li><a href="#portfolio">Porfolio</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </footer>
 
   <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>

@@ -1,0 +1,38 @@
+/**
+ * Contact section styles
+ */
+
+.contact {
+  @extend %app-width;
+  background: lighten($color-background, 3);
+  padding: 0 1.5rem 2rem;
+
+  p {
+    @include medium-light;
+    text-align: center;
+    max-width: $app-max-block-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p:nth-child(3) {
+    margin-top: 2.5rem;
+  }
+
+  a {
+    font-size: 1.5em;
+    color: darken($color-highlight, 20);
+  }
+
+  a:hover {
+    color: lighten($color-primary, 20);
+  }
+
+
+  @include media(tablet) {
+  padding-bottom: 3.5rem;
+    a {
+      @include large-light;
+    }
+  }
+}

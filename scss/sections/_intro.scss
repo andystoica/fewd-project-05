@@ -1,0 +1,45 @@
+/**
+ * Home page styles
+ */
+
+.home-page header {
+  @extend %app-width;
+  @extend %clearfix;
+  @include medium-light;
+  text-align: center;
+  padding: 1.5rem;
+
+  img {
+    max-width: 60%;
+    border-radius: 50%;
+    margin: 1.5rem 0;
+  }
+
+  @include media(landscape) {
+    img {
+      float: right;
+      max-width: 35%;
+      margin-right: 1rem;
+    }
+
+    p {
+      max-width: 55%;
+      text-align: left;
+      float: left;
+    }
+  }
+
+  @include media(tablet) {
+    padding: 2rem;
+
+    img {
+      width: 30%;
+      max-width: 225px;
+      margin: 1rem 7.5%;
+    }
+    p {
+      max-width: 55%;
+    }
+  }
+
+}

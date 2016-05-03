@@ -1,0 +1,46 @@
+/**
+ * Footer styles
+ */
+
+.main-footer {
+  @extend %app-width;
+  @include small-bold;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  text-transform: uppercase;
+
+  a.footer-logo {
+    text-transform: none;
+  }
+
+  @include media(tablet) {
+    padding: 2rem;
+  }
+}
+
+
+
+.footer-nav {
+  ul {
+    margin: 0;
+  }
+
+  li {
+    display: none;
+    margin-left: 3rem;
+  }
+
+  li.top {
+    display: inline;
+  }
+
+  @include media(tablet) {
+    li {
+      display: inline;
+    }
+    li.top {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+/**
+ * Main header styles
+ */
+
+.main-header {
+  @extend %app-width;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 1.5rem 0;
+  background: $color-highlight;
+
+  a.header-logo {
+    flex: 1;
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  a.header-nav-btn {
+    display: block;
+
+    i {
+      margin: 1rem 0 1rem 1rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  @include media(tablet) {
+    padding-top: 3rem;
+    text-align: center;
+    background: none;
+
+    a.header-logo {
+      display: inline-block;
+      margin-bottom: .5rem;
+      font-size: 3rem;
+      font-weight: 100;
+    }
+
+    a.header-nav-btn {
+      display: none;
+    }
+  }
+
+  @include media(desktop) {
+    padding: 3rem 2rem 2rem;
+
+    a.header-logo {
+      @include large-light;
+      flex: initial;
+      margin-right: auto;
+    }
+  }
+}
+
+
+
+.header-nav {
+  flex: 1 100%;
+  display: none;
+
+  ul {
+    margin: 1rem 0;
+  }
+
+  a {
+    display: block;
+    padding: 1rem;
+    @include medium-light;
+    text-align: center;
+    border-top: 1px solid lighten($color-highlight, 7);
+  }
+
+  @include media(tablet) {
+    display: inline-block;
+
+    li {
+      display: inline-block;
+    }
+
+    a {
+      @include small-bold;
+      text-transform: uppercase;
+      display: inline-block;
+      border: none;
+    }
+  }
+
+  @include media(desktop) {
+    flex: initial;
+  }
+}

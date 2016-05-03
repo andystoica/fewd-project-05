@@ -1,11 +1,19 @@
-// Base styles
-@import 'base/index';
+// Resets and Base styles
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/extends';
 
 // Component styles
-@import 'components/index';
+@import 'components/general';
+@import 'components/typography';
 
 // Layout styles
-@import 'layouts/index';
+@import 'layouts/header';
+@import 'layouts/footer';
 
-// Page specific styles
-@import 'pages/index';
+// Page section styles
+@import 'sections/intro';
+@import 'sections/portfolio';
+@import 'sections/skills';
+@import 'sections/contact';

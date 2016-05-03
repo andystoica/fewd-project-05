@@ -1,0 +1,29 @@
+/**
+ * General initialisation styles
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-background;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+
+}
+
+a {
+  transition: all .2s;
+}
+
+a:hover {
+  color: darken($color-highlight, 20);
+}

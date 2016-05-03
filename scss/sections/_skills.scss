@@ -1,0 +1,36 @@
+.skills {
+  @extend %app-width;
+  background: lighten($color-highlight, 10);
+  padding: 0 1.5rem 1.5rem;
+
+  p {
+    @include medium-light;
+    text-align: center;
+    max-width: $app-max-block-width;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: $app-max-block-width;
+    margin: 0 auto;
+
+    li {
+      background-color: darken($color-highlight, 10);
+      margin: 7px;
+      padding: 5px 20px;
+      border-radius: 25px;
+      border-bottom: 3px solid $color-secondary;
+    }
+
+    @include media(landscape) {
+      li:nth-of-type(2n) {
+        background-color: lighten($color-primary, 30);
+        color: $color-highlight;
+      }
+    }
+  }
+}
