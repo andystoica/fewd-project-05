@@ -1,3 +1,7 @@
+/**
+ * Portfolion Section styles
+ */
+
 .portfolio {
   @extend %app-width;
   background: lighten($color-background, 3);
@@ -13,13 +17,16 @@
 
 
 .gallery-item {
+  margin: .5rem 0;
+
   img {
     max-width: 100%;
   }
 
   p {
-    @include medium-light;
+    @include small-normal;
     text-align: center;
+    padding: 0 2rem;
   }
 
   @include media(landscape) {

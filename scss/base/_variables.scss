@@ -1,3 +1,7 @@
+/**
+ * Variables
+ */
+
 // Color variables
 $color-primary         : #3b3a36;
 $color-secondary       : #b3c2bf;
@@ -6,6 +10,9 @@ $color-background      : #e9ece5;
 
 // Font variables
 $font-primary          : 'Open Sans', Helvetica, Arial, sans-serif;
+$font-small            : 0.9rem;
+$font-medium           : 1.1rem;
+$font-large            : 2rem;
 
 // Breakpoints
 $brk-small             : 320px;
@@ -15,4 +22,4 @@ $brk-large             : 1024px;
 
 // Layout variables
 $app-max-width         : 1024px;
-$app-max-block-width   : 720px;
+$app-max-block-width   : 650px;

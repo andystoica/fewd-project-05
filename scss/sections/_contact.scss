@@ -5,7 +5,7 @@
 .contact {
   @extend %app-width;
   background: lighten($color-background, 3);
-  padding: 0 1.5rem 2rem;
+  padding: 0 1.5rem 1.5rem;
 
   p {
     @include medium-light;
@@ -15,12 +15,10 @@
     margin-right: auto;
   }
 
-  p:nth-child(3) {
-    margin-top: 2.5rem;
-  }
-
   a {
-    font-size: 1.5em;
+    font-size: 1.3em;
+    line-height: 1;
+    margin-left: .5rem;
     color: darken($color-highlight, 20);
   }
 
@@ -30,9 +28,6 @@
 
 
   @include media(tablet) {
-  padding-bottom: 3.5rem;
-    a {
-      @include large-light;
-    }
+    padding-bottom: 3rem;
   }
 }

@@ -1,6 +1,9 @@
+/**
+ * Skills section styles
+ */
+
 .skills {
   @extend %app-width;
-  background: lighten($color-highlight, 10);
   padding: 0 1.5rem 1.5rem;
 
   p {
@@ -23,7 +26,7 @@
       margin: 7px;
       padding: 5px 20px;
       border-radius: 25px;
-      border-bottom: 3px solid $color-secondary;
+      border-bottom: 3px solid lighten($color-primary, 50);
     }
 
     @include media(landscape) {
