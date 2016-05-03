@@ -5,6 +5,7 @@
 .skills {
   @extend %app-width;
   padding: 0 1.5rem 1.5rem;
+  background: $color-highlight;
 
   p {
     @include medium-light;
@@ -22,16 +23,16 @@
     margin: 0 auto;
 
     li {
-      background-color: darken($color-highlight, 10);
+      background-color: darken($color-highlight, 20);
       margin: 7px;
       padding: 5px 20px;
       border-radius: 25px;
-      border-bottom: 3px solid lighten($color-primary, 50);
+      border-bottom: 3px solid lighten($color-primary, 30);
     }
 
     @include media(landscape) {
       li:nth-of-type(2n) {
-        background-color: lighten($color-primary, 30);
+        background-color: lighten($color-primary, 15);
         color: $color-highlight;
       }
     }
