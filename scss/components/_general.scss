@@ -25,5 +25,5 @@ a {
 }
 
 a:hover {
-  color: darken($color-highlight, 20);
+  color: $color-highlight-dark;
 }

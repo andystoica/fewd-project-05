@@ -8,12 +8,12 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 0 1.5rem 0;
-  background: $color-highlight;
+  background: $color-bg-medium;
 
   a.header-logo {
     flex: 1;
     display: block;
-    font-size: 1.4rem;
+    font-size: $font-medium-large;
   }
 
   a.header-nav-btn {
@@ -25,7 +25,7 @@
 
     i {
       margin: 1rem 0 1rem 1rem;
-      font-size: 1.4rem;
+      font-size: $font-medium-large;
     }
   }
 
@@ -37,7 +37,7 @@
     a.header-logo {
       flex-basis: 300px;
       margin-bottom: .5rem;
-      font-size: 3rem;
+      font-size: $font-very-large;
       font-weight: 100;
     }
 
@@ -71,7 +71,7 @@
     padding: 1rem;
     @include medium-light;
     text-align: center;
-    border-top: 1px solid rgba($color-primary, .1);
+    border-top: 1px solid $color-bg-medium;
   }
 
   @include media(tablet) {
