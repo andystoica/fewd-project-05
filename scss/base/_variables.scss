@@ -2,12 +2,18 @@
  * Variables
  */
 
-// Color variables
+// Base color variables
 $color-primary         : #3b3a36;
 $color-secondary       : #b3c2bf;
 $color-highlight       : #c0dfd9;
 $color-background      : #e9ece5;
 
+// Color mixes variables
+$color-bg-light       : rgba($color-secondary, .2);
+$color-bg-medium      : rgba($color-primary, .2);
+$color-bg-dark        : rgba($color-primary, .5);
+
+$color-highlight-dark : darken($color-highlight, 20);
 
 // Font variables
 $font-primary          : 'Open Sans', Helvetica, Arial, sans-serif;
